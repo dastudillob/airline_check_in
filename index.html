@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Check-in</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Check-in</h1>
+      <div class="search-box">
+        <label for="flight-id-input">Flight ID:</label>
+        <input type="text" id="flight-id-input" name="flight-id">
+        <button id="search-button">Search</button>
+      </div>
+      <div class="infof-box">
+        <h2>Flight Information</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Take off Date</th>
+              <th>Take off Airport</th>
+              <th>Landing Date</th>
+              <th>Landing Airport</th>
+              <th>Airplane</th>
+            </tr>
+          </thead>
+          <tbody id="flight-table-body">
+          </tbody>          
+        </table>
+      </div>
+    </div>
+      </div>
+      <div class="info-box">
+        <h2>Passenger Information</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>DNI</th>
+              <th>Name</th>
+              <th>Age</th>
+              <th>Country</th>
+              <th>Boarding Pass ID</th>
+              <th>Purchase ID</th>
+              <th>Seat Type</th>
+            </tr>
+          </thead>
+          <tbody id="passenger-table-body">
+          </tbody>          
+        </table>
+      </div>
+    </div>
+    <script src="main.js"></script>
+    <script>
+      
+      const searchButton = document.getElementById('search-button');
+      searchButton.addEventListener('click', searchFlight);
+      searchButton.addEventListener('click',searchFlightpass);
+      
+    </script>
+  </body>
+</html>
